@@ -20,62 +20,62 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.palette.graphics.Palette
 import com.materialkolor.score.Score
 
-val DefaultThemeColor = Color(0xFFED5564)
+val DefaultThemeColor = Color(0xFFD71921) // Nothing OS signature red
 
-// Pitch black dark color scheme
+// Nothing OS dark color scheme — pure black with red accent
 private val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFFFFFFFF),
-    onPrimary = Color(0xFF000000),
-    primaryContainer = Color(0xFF2A2A2A),
+    primary = Color(0xFFD71921),            // Nothing red accent
+    onPrimary = Color(0xFFFFFFFF),
+    primaryContainer = Color(0xFF121212),    // Dark gray card/surface
     onPrimaryContainer = Color(0xFFFFFFFF),
-    secondary = Color(0xFFE0E0E0),
+    secondary = Color(0xFF9E9E9E),          // Medium gray muted text
     onSecondary = Color(0xFF000000),
-    secondaryContainer = Color(0xFF1A1A1A),
-    onSecondaryContainer = Color(0xFFE0E0E0),
-    tertiary = Color(0xFFC0C0C0),
+    secondaryContainer = Color(0xFF121212),
+    onSecondaryContainer = Color(0xFF9E9E9E),
+    tertiary = Color(0xFF9E9E9E),
     onTertiary = Color(0xFF000000),
-    tertiaryContainer = Color(0xFF2A2A2A),
-    onTertiaryContainer = Color(0xFFC0C0C0),
-    error = Color(0xFFFF6B6B),
-    onError = Color(0xFF000000),
+    tertiaryContainer = Color(0xFF121212),
+    onTertiaryContainer = Color(0xFF9E9E9E),
+    error = Color(0xFFD71921),
+    onError = Color(0xFFFFFFFF),
     errorContainer = Color(0xFF5A0000),
     onErrorContainer = Color(0xFFFFDAD6),
-    background = Color(0xFF000000),
-    onBackground = Color(0xFFFFFFFF),
-    surface = Color(0xFF000000),
-    onSurface = Color(0xFFFFFFFF),
-    surfaceVariant = Color(0xFF0D0D0D),
-    onSurfaceVariant = Color(0xFFE0E0E0),
-    surfaceTint = Color(0xFFFFFFFF),
+    background = Color(0xFF000000),         // Pure black background
+    onBackground = Color(0xFFFFFFFF),       // White text
+    surface = Color(0xFF000000),            // Pure black surface
+    onSurface = Color(0xFFFFFFFF),          // White text
+    surfaceVariant = Color(0xFF121212),     // Dark gray
+    onSurfaceVariant = Color(0xFF9E9E9E),  // Medium gray
+    surfaceTint = Color(0xFFD71921),        // Nothing red tint
     inverseSurface = Color(0xFFFFFFFF),
     inverseOnSurface = Color(0xFF000000),
-    outline = Color(0xFF6A6A6A),
-    outlineVariant = Color(0xFF2A2A2A),
+    outline = Color(0xFF333333),            // Dark gray disabled/inactive
+    outlineVariant = Color(0xFF1A1A1A),
     scrim = Color(0xFF000000),
-    surfaceBright = Color(0xFF2A2A2A),
-    surfaceContainer = Color(0xFF0D0D0D),
+    surfaceBright = Color(0xFF1A1A1A),
+    surfaceContainer = Color(0xFF121212),   // Dark gray card bg
     surfaceContainerHigh = Color(0xFF1A1A1A),
-    surfaceContainerHighest = Color(0xFF2A2A2A),
-    surfaceContainerLow = Color(0xFF050505),
+    surfaceContainerHighest = Color(0xFF222222),
+    surfaceContainerLow = Color(0xFF0A0A0A),
     surfaceContainerLowest = Color(0xFF000000),
     surfaceDim = Color(0xFF000000)
 )
 
-// Pure white light color scheme
+// Nothing OS light color scheme — white with red accent
 private val LightColorScheme = lightColorScheme(
-    primary = Color(0xFF000000),
+    primary = Color(0xFFD71921),            // Nothing red accent
     onPrimary = Color(0xFFFFFFFF),
-    primaryContainer = Color(0xFFE0E0E0),
-    onPrimaryContainer = Color(0xFF000000),
-    secondary = Color(0xFF2A2A2A),
+    primaryContainer = Color(0xFFF5F5F5),
+    onPrimaryContainer = Color(0xFF1A1A1A),
+    secondary = Color(0xFF666666),          // Muted text
     onSecondary = Color(0xFFFFFFFF),
     secondaryContainer = Color(0xFFF0F0F0),
-    onSecondaryContainer = Color(0xFF000000),
-    tertiary = Color(0xFF4A4A4A),
+    onSecondaryContainer = Color(0xFF1A1A1A),
+    tertiary = Color(0xFF666666),
     onTertiary = Color(0xFFFFFFFF),
     tertiaryContainer = Color(0xFFE8E8E8),
-    onTertiaryContainer = Color(0xFF000000),
-    error = Color(0xFFD32F2F),
+    onTertiaryContainer = Color(0xFF1A1A1A),
+    error = Color(0xFFD71921),
     onError = Color(0xFFFFFFFF),
     errorContainer = Color(0xFFFFCDD2),
     onErrorContainer = Color(0xFF5A0000),
@@ -84,12 +84,12 @@ private val LightColorScheme = lightColorScheme(
     surface = Color(0xFFFFFFFF),
     onSurface = Color(0xFF000000),
     surfaceVariant = Color(0xFFFAFAFA),
-    onSurfaceVariant = Color(0xFF2A2A2A),
-    surfaceTint = Color(0xFF000000),
+    onSurfaceVariant = Color(0xFF333333),
+    surfaceTint = Color(0xFFD71921),        // Nothing red tint
     inverseSurface = Color(0xFF1A1A1A),
     inverseOnSurface = Color(0xFFFFFFFF),
-    outline = Color(0xFF8A8A8A),
-    outlineVariant = Color(0xFFD0D0D0),
+    outline = Color(0xFFBDBDBD),
+    outlineVariant = Color(0xFFE0E0E0),
     scrim = Color(0xFF000000),
     surfaceBright = Color(0xFFFFFFFF),
     surfaceContainer = Color(0xFFFAFAFA),

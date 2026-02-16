@@ -138,7 +138,7 @@ object PlayerSliderColors {
         const val INACTIVE_TICK_ALPHA = 0.2f
         
         /** Default active color when no theme color is available */
-        val DEFAULT_ACTIVE_COLOR = Color(0xFF1976D2)
+        val DEFAULT_ACTIVE_COLOR = Color(0xFFD71921)
         
         /** Default inactive color when no theme color is available */
         val DEFAULT_INACTIVE_COLOR = Color.White.copy(alpha = INACTIVE_TRACK_ALPHA)
